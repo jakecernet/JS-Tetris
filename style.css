@@ -76,3 +76,11 @@ canvas {
 #play-again:hover {
     background-color: #06D;
 }
+
+.score {
+    color: #08F;
+    font-weight: bold;
+    top: 40px;
+    left: 40px;
+    font-size: 24px;
+}

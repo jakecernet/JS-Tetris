@@ -6,6 +6,8 @@ const gameOverMessage = document.getElementById('game-over-message');
 
 const speed = 1000; // milliseconds
 
+let score = 0;
+
 const ROWS = 20;
 const COLS = 10;
 const BLOCK_SIZE = 30;
