@@ -6,6 +6,10 @@ const gameOverMessage = document.getElementById('game-over-message');
 
 const speed = 1000; // milliseconds
 
+var ctx = canvas.getContext("2d");
+
+var squareSize = 30;
+
 let score = 0;
 
 const ROWS = 20;
@@ -152,6 +156,9 @@ function startNewGame() {
     drawBoard();
     drawPiece(currentPiece, currentX, currentY);
     drop();
+    score = 0;
+    drawScoreDisplay();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function handleKeyPress(event) {
